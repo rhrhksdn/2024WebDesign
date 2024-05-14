@@ -16,21 +16,22 @@ a{
 /*전체컨에이너*/
 #wrap{
     width: 100%;
-    background-color: #ddd;
 }
 /*header*/
 header{
     position: relative;
     width: 1340px;
     height: 100px;
-    background-color: #111;
+    background-color: #e31a40;
 }
 .logo{
     position: absolute;
     left: 0;
     width: 200px;
     height: 100px;
-    background-color: #222;
+}
+.logo img{
+    margin-top: 25px;
 }
 .menu{
     position: absolute;
@@ -38,7 +39,16 @@ header{
     bottom: 0;
     width: 600px;
     height: 40px;
-    background-color: #333;
+}
+.menu li{
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #9D0208;
+}
+.menu a{
+    color: #3A86FF;
 }
 
 /*visual*/
@@ -49,10 +59,8 @@ header{
 }
 /*contents*/
 #contents{
-    position: absolute;
-    top: 350px;
-    left: 50%;
-    transform: translate(-50%);
+    position: relative;
+    top: -100px;
     width: 1340px;
     background-color: #555;
 }
@@ -84,11 +92,16 @@ header{
 }
 /*footer*/
 footer {
+    position: relative;
+    top:-100px;
     display: flex;
     width: 1340px;
     height: 100px;
 }
 .bt-logo{
+    width: 200px;
+    height: 100px;
+    background-color: #222;
     filter: grayscale(100%);
 }
 .copy{
